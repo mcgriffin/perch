@@ -40,6 +40,20 @@ footer {
   @include span-columns(12);
 }
 
+a {
+  text-decoration: none;
+  color: white;
+  
+  &:hover {
+  color: grey;
+  }
+
+  &:active {
+  color: pink;
+  }
+}
+
+
 
 /*****************************************************************************
   Layout Styles
@@ -51,8 +65,14 @@ footer {
 }
 
 .menu {
+  
   @include span-columns(12);
-  border: 1px solid black;  
+  border: 1px solid white;
+  background: black;
+}
+
+.stuckMenu {
+  @include outer-container;
 }
 
 .splash {
@@ -60,10 +80,18 @@ footer {
   border: 1px solid black;
 }
 
-.high-level-content {
+.portfolio-info {
   @include shift(2);
   @include span-columns(8);
   border: 1px solid black;
+  padding-top: 50px;
+}
+
+.contact-info {
+  @include shift(2);
+  @include span-columns(8);
+  border: 1px solid black;
+  padding-top: 50px;
 }
 
 .footer-info {
