@@ -2,11 +2,15 @@
   perch
 ******************************************************************************/
 
+$visual-grid: true;
+$visual-grid-color: red;
+$grid-columns: 12;
 
 @import '../../bower_components/bourbon/dist/_bourbon.scss';
 @import '../../bower_components/neat/app/assets/stylesheets/_neat.scss';
 
 
+@import 'https://fonts.googleapis.com/css?family=Fjalla+One';
 
 
 
@@ -14,20 +18,65 @@
   Base Styles
 ******************************************************************************/
 
+$font-stack: 'Fjalla One';
+$primary-color: ffffff;
 
+
+body {
+@include outer-container;
+  font: 200% $font-stack;
+  color: $primary-color;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  @include span-columns(2);
+}
+
+footer {
+  @include span-columns(12);
+}
 
 
 /*****************************************************************************
   Layout Styles
 ******************************************************************************/
 
+.logo-bar {
+  @include span-columns(12);
+  border: 1px solid black;
+}
 
+.menu {
+  @include span-columns(12);
+  border: 1px solid black;  
+}
 
+.splash {
+  @include span-columns(12);
+  border: 1px solid black;
+}
+
+.high-level-content {
+  @include shift(2);
+  @include span-columns(8);
+  border: 1px solid black;
+}
+
+.footer-info {
+  border: 1px solid black;
+}
 
 /*****************************************************************************
   Module Styles
 ******************************************************************************/
 
+.splash-photo {
+  @include span-columns(12);
+}
 
 
 
