@@ -43,6 +43,18 @@
     <!-- build:js scripts/main.js -->
     <script src="../bower_components/jquery/dist/jquery.js"></script>
     <script src="scripts/main.js"></script>
+    <script src="js/stickUp.min.js"></script>
+
+    <script type="text/javascript">
+              //initiating jQuery
+              jQuery(function($) {
+                $(document).ready( function() {
+                  //enabling stickUp on the '.navbar-wrapper' class
+                  $('.navbar-wrapper').stickUp();
+                });
+              });
+
+            </script>
     <!-- endbuild -->
   </body>
 </html>
