@@ -1,0 +1,12 @@
+{
+  "name": "perch",
+  "private": true,
+  "dependencies": {
+    "bourbon": "~4.2.6",
+    "neat": "~1.7.0", 
+    "jquery": "~1.11.0",
+    "normalize-css": "~3.0.2"
+  },
+  "devDependencies": {}
+}
+
